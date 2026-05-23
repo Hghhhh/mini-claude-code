@@ -191,13 +191,11 @@ const cronTools = feature('AGENT_TRIGGERS')
 
 ## 动手环节：mini-claude-code 的工具系统实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`0fbbfd1` refactor: modular architecture with Day 1-5 concepts
-> 相关文件：`src/tools.ts`（新增 144 行）
+> 相关文件：`src/tools.ts`
 
 ### 本次改动概述
 
-commit `0fbbfd1` 中 `src/tools.ts` 实现了 Day 4 的核心——类型化的工具注册表。每个工具是一个结构化对象，带 schema 定义和权限门控。
+`src/tools.ts` 实现了 Day 4 的核心——类型化的工具注册表。每个工具是一个结构化对象，带 schema 定义和权限门控。
 
 ### Tool 接口定义
 
