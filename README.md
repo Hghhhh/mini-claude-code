@@ -99,7 +99,7 @@
 
 ---
 
-## claudecode源码
+## 附录：claudecode源码
 可此处下载：https://github.com/vignycn/ClaudeCode
 
 *生成时间: 2026-05-08*
