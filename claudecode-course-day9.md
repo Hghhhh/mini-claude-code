@@ -579,11 +579,6 @@ async function writeToMailbox(recipientName, message, teamName) {
 
 ## 动手环节：mini-claude-code 的子 Agent 通信实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：
-> - `3250756` feat: add sub-agent system (Day 9)
-> - `6924527` feat: add async sub-agent with TaskRegistry and task-notification (Day 9)
-
 ### 本次改动概述
 
 Day 9 分两次提交完成子 Agent 系统。第一次实现**同步子 Agent**（协议 1：返回值通信），第二次新增**异步子 Agent**（协议 2：task-notification XML 通信）。
