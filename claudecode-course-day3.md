@@ -196,13 +196,11 @@ const messages = prependUserContext(messagesForQuery, userContext)
 
 ## 动手环节：mini-claude-code 的 Prompt 组装实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`0fbbfd1` refactor: modular architecture with Day 1-5 concepts
-> 相关文件：`src/prompt.ts`（新增 65 行）、`main.ts`（CLAUDE.md 注入逻辑）
+> 相关文件：`src/prompt.ts`、`main.ts`（CLAUDE.md 注入逻辑）
 
 ### 本次改动概述
 
-commit `0fbbfd1` 中 `src/prompt.ts` 实现了 Day 3 的核心——系统提示词的分层组装。关键设计：静态部分利于 prompt cache，动态部分按需拼接，CLAUDE.md 作为用户消息注入。
+`src/prompt.ts` 实现了 Day 3 的核心——系统提示词的分层组装。关键设计：静态部分利于 prompt cache，动态部分按需拼接，CLAUDE.md 作为用户消息注入。
 
 ### 静态/动态分层
 
