@@ -209,13 +209,11 @@ for (const cmd of newSkills) sent.add(cmd.name)
 
 ## 动手环节：mini-claude-code 的 Skill 系统实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`0fbbfd1` refactor: modular architecture with Day 1-5 concepts
-> 相关文件：`src/skills.ts`（新增 81 行）、`src/loop.ts`（`use_skill` 工具注册）
+> 相关文件：`src/skills.ts`、`src/loop.ts`（`use_skill` 工具注册）
 
 ### 本次改动概述
 
-commit `0fbbfd1` 中 `src/skills.ts` 实现了 Day 5 的核心——两阶段注入。阶段一在启动时扫描 `skills/` 目录发现技能（只取元数据），阶段二在模型调用 `use_skill` 工具时加载完整内容。
+`src/skills.ts` 实现了 Day 5 的核心——两阶段注入。阶段一在启动时扫描 `skills/` 目录发现技能（只取元数据），阶段二在模型调用 `use_skill` 工具时加载完整内容。
 
 ### 阶段一：发现技能（`discoverSkills`）
 
