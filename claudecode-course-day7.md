@@ -328,14 +328,11 @@ async function autoCompactIfNeeded(messages, ...) {
 ---
 
 ## 动手环节：mini-claude-code 的上下文压缩实现
-
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`99d47b0` feat: add context compression (Day 7) + `b6f9f06` feat: layered compression pipeline
 > 相关文件：`src/compact.ts`（新增 142 行）、`src/loop.ts`（+18 行）
 
 ### 本次改动概述
 
-两次提交共同完成 Day 7 的核心——分层压缩管线。`99d47b0` 实现基础压缩框架，`b6f9f06` 补充三层分级策略（Snip → Microcompact → Full Compact），模拟 Claude Code 的分层管线设计。
+实现基础压缩框架和补充三层分级策略（Snip → Microcompact → Full Compact），模拟 Claude Code 的分层管线设计。
 
 **新增 `src/compact.ts` — 三层压缩架构**
 
