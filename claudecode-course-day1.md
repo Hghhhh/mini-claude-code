@@ -202,13 +202,11 @@ if (args.includes('--version') || args.includes('-v')) {
 
 ## 动手环节：mini-claude-code 的启动链路实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`0fbbfd1` refactor: modular architecture with Day 1-5 concepts
-> 相关文件：`main.ts`（新增 104 行）
+> 相关文件：`main.ts`
 
 ### 本次改动概述
 
-commit `0fbbfd1` 是 mini-claude-code 从单文件 `agent.ts` 重构为模块化架构的大提交（9 文件，+523 行）。其中 `main.ts` 承载了 Day 1 的核心概念——启动链路优化。
+本次改动mini-claude-code 从单文件 `agent.ts` 重构为模块化架构的大提交。其中 `main.ts` 承载了 Day 1 的核心概念——启动链路优化。
 
 ### 快速路径短路
 
