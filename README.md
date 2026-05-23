@@ -39,15 +39,14 @@
 
 1. **Part 1: 模块全景图** — 该模块的整体架构/流程介绍（含架构图或流程图），让读者先建立全局理解
 2. **Part 2: 精巧 Tips** — 按"场景引入 → 问题揭示 → 实现思路 → 效果对比 → 今日收获"结构撰写的深度细节
-3. **动手环节** — mini-claude-code 代码实现（基于 git commit 记录，展示代码变更）
+3. **动手环节** — mini-claude-code 代码实现
 4. **深入问答** — 3~5 个深入问题的详细解答
 
 ---
 
 ## mini-claude-code 配套项目
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 本地路径：/home/admin/workspace/mini-claude-code
+> 仓库地址：本仓库
 
 每天的课程文章包含一个"动手环节"，展示 mini-claude-code 中对应 Day 概念的实际代码实现。
 
@@ -90,19 +89,6 @@
 - 输出目录: /home/admin/workspace/claudecode/illustrations/dayN-{slug}/
 - 需要设置 `NODE_PATH=$(npm root -g)` 来加载全局模块
 
-### 记忆文件位置
-
-```
-/home/admin/.claude/projects/-home-admin/memory/
-├── MEMORY.md                          # 索引文件
-├── project_claudecode_course.md       # 课程项目上下文
-├── project_mini_claude_code.md        # mini-claude-code 项目上下文
-├── user_xxx.md               # 用户画像
-├── feedback_dingtalk_full_content.md  # 反馈：完整内容发送
-├── feedback_check_image_quality.md    # 反馈：图片质量自检
-└── feedback_test_mini_claude_code.md  # 反馈：代码测试要求
-```
-
 ---
 
 ## 素材规范
@@ -112,6 +98,9 @@
 - **数字依据**：所有时间数据（如 65ms、135ms）必须来自源码中的真实 benchmark 或注释
 
 ---
+
+## claudecode源码
+可此处下载：https://github.com/vignycn/ClaudeCode
 
 *生成时间: 2026-05-08*
 *最后更新: 2026-05-23*
