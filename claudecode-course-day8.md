@@ -193,13 +193,11 @@ Claude Code 严格区分四种记忆类型，**且明确排除了不该记的东
 
 ## 动手环节：mini-claude-code 的记忆系统实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`5fb54af` feat: add persistent memory system (Day 8)
 > 相关文件：`src/memory.ts`（新增 95 行）、`src/loop.ts`（+12 行）、`src/prompt.ts`（+8 行）
 
 ### 本次改动概述
 
-commit `5fb54af` 给 mini-claude-code 加上了跨会话的**持久化记忆系统**——文件存储 + 启动自动加载 + `save_memory` 工具手动保存。
+给 mini-claude-code 加上了跨会话的**持久化记忆系统**——文件存储 + 启动自动加载 + `save_memory` 工具手动保存。
 
 **新增 `src/memory.ts`**
 
