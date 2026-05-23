@@ -434,8 +434,6 @@ Bash("npm test")       ← 同理
 
 ## 动手环节：mini-claude-code 的 Checkpoint 实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`待提交` feat: add file checkpoint and rewind system (Day 12)
 > 相关文件：`src/checkpoint.ts`（新增 ~120 行）、`src/loop.ts`（+15 行）、`src/tools.ts`（+20 行）
 
 ### 本次改动概述
