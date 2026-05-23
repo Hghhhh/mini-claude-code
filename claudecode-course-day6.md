@@ -188,13 +188,11 @@ function hasPermissionsToUseToolInner(tool, input, ctx) {
 
 ## 动手环节：mini-claude-code 的权限规则引擎实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`f4aa675` feat: add permission rule engine (Day 6)
 > 相关文件：`src/permissions.ts`（新增 78 行）、`src/tools.ts`（+15 行）、`src/loop.ts`（+6 行）
 
 ### 本次改动概述
 
-commit `f4aa675` 把 mini-claude-code 的权限系统从简单的 `needsPermission` 布尔值升级为真正的**三规则引擎**——deny > allow > ask，匹配 Claude Code 的分层权限模型。
+本次改动把 mini-claude-code 的权限系统从简单的 `needsPermission` 布尔值升级为真正的**三规则引擎**——deny > allow > ask，匹配 Claude Code 的分层权限模型。
 
 **新增 `src/permissions.ts`**
 
