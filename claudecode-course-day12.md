@@ -162,8 +162,6 @@ for (const cell of damagedCells) {
 
 ## 动手环节：mini-claude-code 的终端 UI 增强
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`28e1ec3` feat: add retry engine with exponential backoff (Day 10)
 > 相关文件：`src/ui.ts`（新增）、`src/loop.ts`（+行内更新）
 
 ### 设计思路
