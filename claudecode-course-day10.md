@@ -495,7 +495,6 @@ Leader 调用 TeamDeleteTool
 
 ## 动手环节：mini-claude-code 的多 Agent 协调
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
 > 相关文件：`src/coordinator.ts`（新增 ~150 行）、`src/loop.ts`（+30 行）
 
 ### 本次改动概述
