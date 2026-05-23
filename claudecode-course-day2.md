@@ -186,13 +186,11 @@ canExecuteTool(isConcurrencySafe) {
 
 ## 动手环节：mini-claude-code 的 Agent Loop 实现
 
-> 仓库地址：http://gitlab.alibaba-inc.com/guohang.hgh/mini-claude-code.git
-> 对应提交：`0fbbfd1` refactor: modular architecture with Day 1-5 concepts
-> 相关文件：`src/loop.ts`（新增 111 行）
+> 相关文件：`src/loop.ts`
 
 ### 本次改动概述
 
-commit `0fbbfd1` 中 `src/loop.ts` 实现了 Day 2 的核心——Agent 主循环。这是整个系统的心脏：`while(turn < MAX_TURNS)` + 工具执行 + 结果回注。
+`src/loop.ts` 实现了 Day 2 的核心——Agent 主循环。这是整个系统的心脏：`while(turn < MAX_TURNS)` + 工具执行 + 结果回注。
 
 ### 完整源码：`src/loop.ts`
 
